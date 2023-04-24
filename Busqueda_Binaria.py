@@ -13,3 +13,7 @@ def busqueda_binaria_recursiva(arreglo, busqueda, izquierda, derecha):
         return busqueda_binaria_recursiva(arreglo, busqueda, indiceDelElementoDelMedio + 1, derecha)
     
 print(busqueda_binaria_recursiva(lista,16,lista[0],lista[-1]))
+
+#De acuerdo al teorema del Maestro este algoritmo tiene una complejidad de O(logn) ya que primero "a" tiene una cantidad de llamados recursivos de 1, después n/b es igual a n/2
+#ya que el tamaño de la entrada siempre busca dividirse en 2, por lo tanto b=2 y finalmente tenemos que O(1) ya que las operaciones son en tiempo constante, por lo tanto c=0
+#Finalmente sustituyendo tenemos que O(logn).
